@@ -1,9 +1,9 @@
 services:
   app:
     image: ghcr.io/sophieneuenmuller/examen_aaee_eval3:latest
-    container_name: aaee_mapamundi_app_sfr
+    container_name: aaee_gobierno_app_sfr
     ports:
       - "8080:8080"
     env_file:
       - .env
-    restart: always
+    restart: unless-restarted

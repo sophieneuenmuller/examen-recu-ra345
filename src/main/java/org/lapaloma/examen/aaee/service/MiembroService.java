@@ -49,7 +49,7 @@ public class MiembroService {
         Miembro miembro = miembroDAO.obtenerMiembroPorNombre(nombre);
 
         // Simulamos el caso de miembro no encontrado para probar la excepción
-         miembro=null;
+        // miembro=null;
          
         if (miembro == null) {
             throw new MiembroNoEncontradoException("Miembro con nombre '" + nombre + "' no encontrado");
